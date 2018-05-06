@@ -1,0 +1,28 @@
+library(circlize)
+library(markdown)
+
+
+source("SS.R", local=TRUE)
+
+
+shinyServer(function(input, output) {
+#################################################################
+#####Sample Switch
+#################################################################
+  if (is.null(input$file1)) {return(NULL)}
+  file1 <- input$file1
+  #####Get DataTable
+  output$ss_data <- renderTable({
+    #ss.lst <- sample_switch(file1, input$offset)
+    #ss.lst$ss.output
+    return(data.frame(file = input$file1$datapath, offset = 10))
+  }) 
+  #####Get Heatmap
+  #output$ss_plot <- renderPlot({
+  #  ss.lst <- sample_switch(file1, 10)
+  #  col_fun = colorRamp2(c(1, nrow(ss.lst$ss.plot)/2, nrow(ss.lst$ss.plot)), c("green", "white", "red"))
+  #  chordDiagram(ss.lst$ss.plot, directional = 1, direction.type = "arrows", annotationTrack = c("name", "grid"), 
+  #               col=col_fun(1 : nrow(ss.lst$ss.plot)))
+  #})
+
+})

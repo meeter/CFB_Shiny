@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1525630337265.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "51F494A",
+    "lastKnownWriteTime" : 1525638658,
+    "last_content_update" : 1525638658877,
+    "path" : "~/Documents/Projects/Shiny/SampleSwitch/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "cursorPosition" : "17,47",
+        "scrollLine" : "2",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
