@@ -14,16 +14,11 @@ customHeaderPanel <- function(title,windowTitle=title){
 }
 
 tagList(
-  tags$head(
-    tags$style(HTML(" .shiny-output-error-validation {color: darkblue; } ")),
-    tags$style(".mybuttonclass{background-color:#CD0000;} .mybuttonclass{color: #fff;} .mybuttonclass{border-color: #9E0000;}")
-  ),
-  titlePanel(div("CFB Shiny Tools", align="center", style="color:darkblue")),
+  titlePanel(div("CFB Shiny ToolBox", align="center", style="color:#4fc5d6")),
   navbarPage(
-    
     theme = shinytheme("cerulean"),
+    #theme = "style.css",
     title = "",
-    
     ## =========================================================================== ##
     ## Gene TABS
     ## =========================================================================== ##
@@ -39,8 +34,8 @@ tagList(
     ## FOOTER
     ## ==================================================================================== ##              
     footer=p(hr(),p("Created by ", a("Jian Yu", href="https://github.com/meeter/"),
-                    " of ",align="center",width=4),
-             p(("Client Faced Bioinformatics, SOPHiA GENETICS"),align="center",width=4),
+                    " from ",align="center",width=4),
+             p(("Client Facing Bioinformatics, SOPHiA GENETICS"),align="center",width=4),
              p(("Copyright (C) 2018, code licensed under GPLv3"),align="center",width=4),
              p(("Code available on Github:"),a("https://github.com",href="https://github.com/"),align="center",width=4)
     ),
