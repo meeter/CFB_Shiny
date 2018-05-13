@@ -35,7 +35,7 @@ tagList(
     ## ==================================================================================== ##              
     footer=p(hr(),p("Created by ", a("Jian Yu", href="https://github.com/meeter/"),
                     " from ",align="center",width=4),
-             p(("Client Facing Bioinformatics, SOPHiA GENETICS"),align="center",width=4),
+             p(("Client Facing Bioinformatics, "),a("SOPHiA GENETICS",href="https://www.sophiagenetics.com/home.html"), align="center",width=4),
              p(("Copyright (C) 2018, code licensed under GPLv3"),align="center",width=4),
              p(("Code available on Github:"),a("https://github.com",href="https://github.com/"),align="center",width=4)
     ),
